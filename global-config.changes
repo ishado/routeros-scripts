@@ -2,6 +2,10 @@
 # Copyright (c) 2019-2020 Christian Hesse <mail@eworm.de>
 # https://git.eworm.de/cgit/routeros-scripts/about/COPYING.md
 
+# TODO: Remove on 2021-09-30
+:global CertificateAvailable
+$CertificateAvailable "Let's Encrypt Authority X3";
+
 # Changes for global-config to be added to notification on script updates
 :global GlobalConfigChanges {
    1="Moved variables from 'global-config' to 'global-functions' for independence";
@@ -37,4 +41,5 @@
   31="Switched Telegram notifications to fixed-width font, with opt-out.";
   32="Merged mode (& reset) button scripts in single new script 'mode-button'.";
   33="Added configurable deviation on health temperature recovery threshold against notification flooding.";
+  34="Updated Let's Encrypt trust chain.";
 };
